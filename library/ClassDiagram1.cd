@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="library.Airplane">
+    <Position X="3" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAACCAAAAkgAAAAAAAAEAEAAAAAAACABAAABE=</HashCode>
+      <FileName>Airplane.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="library.Fighterjet">
+    <Position X="4.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAACACABAAEgAAAAAAAAEAEAAAAAAACABAAABA=</HashCode>
+      <FileName>Fighterjet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="library.Helicopter">
+    <Position X="6.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAEgAAAAAAAAEgEAAAIAAACABAAABA=</HashCode>
+      <FileName>Helicopter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="library.Runner">
+    <Position X="7.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAIAAAAACAAAAEgAEAIAABAkIEAQNAAAQCAAAAAAA=</HashCode>
+      <FileName>Runner.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="library.RunnerArray">
+    <Position X="9.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAACACAAAACAAAAABAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RunnerArr.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="library.Sortid">
+    <Position X="10.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Sortid.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.1" />
+  </Class>
+  <Class Name="library.zAircraft">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="library.zAircraft.IdNumber" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>zAircraft.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAQEgAEACBABAEgEAAAAAAwCIBAIAhA=</HashCode>
+      <FileName>zAircraft.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="library.IInit">
+    <Position X="10.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>IInit.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="library.IComparable">
+    <Position X="10.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SortName.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
