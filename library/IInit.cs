@@ -11,6 +11,5 @@ namespace library
     {
         void Init();
         void RandomInit();
-        void Show();
     }
 }

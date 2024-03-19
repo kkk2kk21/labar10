@@ -175,7 +175,6 @@ namespace library
                 return -1;
         }
 
-
         public virtual object Clone()
         {
             return new zAircraft(Model, ReleaseYear, EngineType, CrewMembers, id.Number);
@@ -214,7 +213,7 @@ namespace library
             {
                 if (obj == null) return false;
                 if (obj is IdNumber t)
-                    return Number == t.Number;
+                    return this.Number == t.Number;
                 return false;
             }
             public override string ToString()
