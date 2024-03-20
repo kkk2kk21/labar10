@@ -113,34 +113,22 @@ namespace library
             Console.WriteLine("Введите модель:");
             Model = Console.ReadLine();
             Console.WriteLine("Введите год:");
-            try
-            {
-                ReleaseYear = Convert.ToInt32(Console.ReadLine());
-            }
-            catch
-            {
-                ReleaseYear = -78;
-            }
+            ReleaseYear = TryParseToIntFunc(Console.ReadLine());
             Console.WriteLine("Введите тип двигателя:");
             EngineType = Console.ReadLine();
             Console.WriteLine("Введите количество членов экипажа:");
-            try
-            {
-                CrewMembers = Convert.ToInt32(Console.ReadLine());
-            }
-            catch
-            {
-                CrewMembers = -78;
-            }
+            CrewMembers = TryParseToIntFunc(Console.ReadLine());
             Console.WriteLine("Введите id воздушного судна:");
-            try
+            id.Number = TryParseToIntFunc(Console.ReadLine());
+        }
+        protected int TryParseToIntFunc(string input)
+        {
+            int result;
+            if (!int.TryParse(input, out result))
             {
-                id.Number = Convert.ToInt32(Console.ReadLine());
+                result = -78;
             }
-            catch
-            {
-                id.Number = -78;
-            }
+            return result;
         }
         //Метод для рандомной инициализации
         public virtual void RandomInit()

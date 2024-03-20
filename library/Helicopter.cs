@@ -53,14 +53,7 @@ namespace library
         {
             base.Init();
             Console.Write("Введите количество лопастей: ");
-            try
-            {
-                NumberBlades = Convert.ToInt32(Console.ReadLine());
-            }
-            catch
-            {
-                NumberBlades = -78;
-            }
+            NumberBlades = TryParseToIntFunc(Console.ReadLine());
         }
         public override void RandomInit()
         {

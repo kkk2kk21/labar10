@@ -19,6 +19,10 @@ namespace library
             get => speed;
             set
             {
+                if (value <= 0)
+                {
+                    throw new ArgumentException("Скорость бегуна должна быть положительной");
+                }
                 speed = value;
             }
         }
@@ -27,6 +31,10 @@ namespace library
             get => distance;
             set
             {
+                if (value <= 0)
+                {
+                    throw new ArgumentException("Дистанция должна быть положительной");
+                }
                 distance = value;
             }
         }
@@ -135,11 +143,19 @@ namespace library
         public virtual void Init()
         {
             Console.WriteLine("Введите скорость бегуна:");
-            Speed = Convert.ToDouble(Console.ReadLine());
+            Speed = TryParseToDoubleFunc(Console.ReadLine());
             Console.WriteLine("Введите дистанцию бегуна:");
-            Distance = Convert.ToDouble(Console.ReadLine());
+            Distance = TryParseToDoubleFunc(Console.ReadLine());
         }
-
+        private double TryParseToDoubleFunc(string input)
+        {
+            double result;
+            if (!double.TryParse(input, out result))
+            {
+                result = -78.0;
+            }
+            return result;
+        }
         public virtual void RandomInit()
         {
             Speed = random.Next(1, 100);

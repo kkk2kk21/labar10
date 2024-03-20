@@ -63,23 +63,9 @@ namespace library
         {
             base.Init();
             Console.Write("Введите количество пассажиров: ");
-            try
-            {
-                NumberPassanger = Convert.ToInt32(Console.ReadLine());
-            }
-            catch
-            {
-                NumberPassanger = -78;
-            }
+            NumberPassanger = TryParseToIntFunc(Console.ReadLine());
             Console.Write("Введите максимальную дистанцию полета: ");
-            try
-            {
-                MaxDistance = Convert.ToInt32(Console.ReadLine());
-            }
-            catch
-            {
-                MaxDistance = -78;
-            }
+            MaxDistance = TryParseToIntFunc(Console.ReadLine());
         }
         public override void RandomInit()
         {
