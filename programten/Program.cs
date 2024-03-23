@@ -228,8 +228,11 @@ namespace lab10
 
             static void DisplayIInitArray(IInit[] initarr)
             {
-                
-                 
+                Console.WriteLine("Вывод объектов массива IInit");
+                for (int i = 0; i < initarr.Length; i++)
+                {
+                    Console.WriteLine($"n{i + 1}. {initarr[i].ToString()}");
+                }
             }
 
             static void DisplayUnsortedArray(zAircraft[] aircraftArray)
