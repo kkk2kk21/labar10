@@ -85,6 +85,7 @@ namespace lab10
             Console.WriteLine("\nБинарный поиск для элемента в массиве отсортированном по году выпуска:");
             Console.WriteLine($"Вертолет 1: {element1}");
             Console.WriteLine($"Вертолет 2: {element2}");
+
             int pos1 = Array.BinarySearch(AircraftArray2, element1);
             int pos2 = Array.BinarySearch(AircraftArray2, element2);
             Console.WriteLine($"Позиция вертолета 1: {pos1 + 1}");
@@ -227,11 +228,8 @@ namespace lab10
 
             static void DisplayIInitArray(IInit[] initarr)
             {
-                Console.WriteLine("Вывод объектов массива IInit");
-                for (int i = 0; i < initarr.Length; i++)
-                {
-                    Console.WriteLine($"n{i + 1}. {initarr[i].ToString()}");
-                }
+                
+                 
             }
 
             static void DisplayUnsortedArray(zAircraft[] aircraftArray)
